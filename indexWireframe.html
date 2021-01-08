@@ -1,0 +1,218 @@
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Workout App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <nav role="navigation">Nav</nav>
+    <h2>Welcome to the first day of the rest of your life!</h2>
+  </header>
+  <section>
+    <h4>No, but really, welcome and let's start customizing your workout :)
+        <br>
+        <!--  1. user wants to sign in or sign up. --> 
+        Let's start with basic info:
+    </h4>
+    <!--  4. user must use first and last name for account but can assign avatar.--> 
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            
+            <input type="submit">
+        </form>
+  </section>
+        <hr>
+  <section>
+  <h5>You can either use your name(s) or an avatar for others to see:</h5>
+    <br>
+    <div class="avatars">
+      <div class="square"></div><br>
+      <div class="circle"></div><br>
+      <div class="triangle-up"></div><br>
+      <div class="triangle-down"></div><br>
+      <input type="submit">
+    </div>
+    
+</section>
+<hr>
+
+<section>
+  <!-- 2. user wants to add more to account using data like eating habits, exercise habits.  --> 
+  <h4>Great! Now don't be scared but we need to ask some personal questions. Please be honest or this won't work for you.<br>
+      What foods do you usually eat?</h4><br>
+      <div class="dropdown">
+        <button class="dropbtn">Select</button>
+        <div class="dropdown-content">
+          <a href="#">pizza</a>
+          <a href="#">tacos</a>
+          <a href="#">sushi</a>
+        </div>
+      <h4>And how many servings? Again, you need to be honest for this to work.</h4><br>
+      <div class="dropdown">
+        <button class="dropbtn">Select</button>
+        <div class="dropdown-content">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+      <h4>What exercise do you do? This can be as simple as walking around the block or crazy as running a mile or two. No judgment either way :) .
+        You can even leave this blank.
+      </h4><br>
+
+  <div class="dropdown">
+    <button class="dropbtn">Select</button>
+    <div class="dropdown-content">
+      <a href="#">nothing yet</a>
+      <a href="#">a little walking</a>
+      <a href="#">occasionally run a mile</a>
+    </div>
+  </div>
+</section>
+    <hr>
+  <section>
+    <!--  3. user gets suggestions for eating and exercise. -->
+    <h4>Now for a tough part since not many of us like eating better. 
+        Choose from the suggestions of what you are fine with eating from now on.
+        (Yes, you read "from now on" because science shows that's how diets work)
+    </h4><br>
+    <div class="dropdown">
+      <button class="dropbtn">Select</button>
+      <div class="dropdown-content">
+        <a href="#">salads</a>
+        <a href="#">indian food from India</a>
+        <a href="#">sushi</a>
+      </div>
+        <h4>Now choose an exercise you fine with starting. You can change your goals as you achieve each one :)</h4>
+        <br>
+    <div class="dropdown">
+      <button class="dropbtn">Select</button>
+      <div class="dropdown-content">
+        <a href="#">Walking around the block</a>
+        <a href="#">Riding a bike for a mile or two</a>
+        <a href="#">push-ups and/or sit-ups</a>
+      </div>
+      <!--  5. user wants to set goals with a set period of time. --> 
+      <h4>How many times a week? Since we're starting, it's ok to start small. 
+          Over time, making these goals bigger will be easier :)</h4>
+        <br>
+        <div class="dropdown">
+          <button class="dropbtn">Select</button>
+          <div class="dropdown-content">
+            <a href="#">Once a week</a>
+            <a href="#">Twice a week</a>
+            <a href="#">Four times a week</a>
+          </div>
+  </section>
+  <hr>
+  <section>
+<!--  6. user wants to customize workout through simplicity and difficulty. --> 
+    <h4>Now here's where we're making this tricky, but you can skip this if you want.
+      <!--  8. user can use and customize rest and workout timers.--> 
+        Do you want to set a timer for exercise and/or rest? 
+    </h4>
+    <br>
+    <p>
+      <input type="radio" name="yes_no" checked>Yes</input>
+      </p>
+<h4>How long? 
+</h4>
+<div class="dropdown">
+  <button class="dropbtn">Select</button>
+  <div class="dropdown-content">
+    <a href="#">hours</a>
+    <a href="#">minutes</a>
+    <a href="#">seconds</a>
+  </div>
+  <h5>choose which timer you want to use or choose both.</h5>
+  <p>
+    <input type="radio" name="yes_no" checked>Resting</input>
+    </p>
+    <p>
+      <input type="radio" name="yes_no">Exercising</input>
+      </p>
+  <p>
+    <input type="radio" name="yes_no">No</input>
+    </p>
+    <input type="submit">
+<br>
+<hr>
+<h1>01:45</h1>
+<hr>
+  </section>
+<hr>
+<section>
+<!--  7. user can use pre-recorded repetition and set counts. --> 
+<h4>Do you want me to count your reps and sets too? 
+</h4>
+<p>
+  <input type="radio" name="yes_no" checked>Yes</input>
+  </p>
+  <h4>click<input type="submit">for pre-recorded audio</h4>
+  <p>
+    <input type="radio" name="yes_no">No</input>
+    </p>
+    <input type="submit">
+  </section>
+  <hr>
+  <section>
+    <!--  9. user can mark how many sets are done. --> 
+    <h4>I will even mark your sets for you if you want! :)
+    </h4>
+    <br>
+    <p>
+      <input type="radio" name="yes_no" checked>Yes</input>
+      </p>
+      <p>
+        <input type="radio" name="yes_no">No</input>
+        </p>
+        <input type="submit">
+        <hr>
+        <div class="hash-marks">
+          <h4>(hash marks here)</h4>
+        </div>
+  </section>
+  <hr>
+  <section>
+    <!--  10. user wants to know how they are doing concerning their goals. -->
+    <h4>Let's check in! 
+    </h4><br>
+    <h5>Push-ups</h5><div class="push-ups"></div>
+    <h5>Walking around the block</h5><div class="walking"></div>
+  </section>
+  <hr>
+  <main></main>
+ <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>-->
+</body>
+
+</html>
